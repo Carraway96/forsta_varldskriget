@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sv">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WW1 – Flervalsfrågor</title><link rel="stylesheet" href="css/styles.css"/></head>
+<body>
+
+<div class="header container">
+  <div class="brand">
+    <img src="assets/icons/ww1_badge.png" alt="WW1 Badge"/>
+    <h1>WW1 – Interaktiva Övningar</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Meny</a>
+    <a href="mcq.html">Flervalsfrågor</a>
+    <a href="timeline.html">Tidslinje</a>
+    <a href="causality.html">Orsakssamband</a>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="toolbar">
+    <div class="progress"><span class="badge">Fråga: <strong id="qno">1</strong> / <span id="qcount"></span></span>
+      <span class="badge">Streak: <strong id="streak">0</strong> | Bästa: <strong id="best">0</strong></span></div>
+    <div><button id="reset" class="btn">Börja om</button></div>
+  </div>
+  <div class="stage">
+    <img id="mcqHero" alt="Illustration" style="width:100%;max-height:320px;border-radius:12px;object-fit:cover;margin-bottom:12px;display:none"/>
+    <div id="mcqCaption" style="color:#94a3b8;font-size:14px;margin:-6px 0 10px 2px;display:none"></div>
+    <div id="qtext" class="qtext"></div>
+    <div class="options" id="options"></div>
+    <div id="feedback" class="feedback" style="display:none"></div>
+  </div>
+</div>
+
+<div class="container footer">
+  © 2025 – Lärövning för undervisning. Bilder: lägg egna i <code>assets/images</code> enligt filnamnen.
+</div>
+
+<script src="js/mcq.js"></script>
+</body></html>
